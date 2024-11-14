@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.5s;
+
+}
+
+.navigation a:hover {
+    color: red;
+    margin-right: 20px;
+}
+
+section {
+    padding: 30px 60px;
+}
+
+
+.main {
+    width: 100%;
+    /* vh=viewport */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  
+    /* you change fixed by scroll try it after you finish */
+
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 550;
+
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: cornflowerblue;
+    font-size: 2.7em;
+    font-weight: 550;
+
+
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 750;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    /* tyhis numbers is for mobile screens */
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+
+}
+
+.main-btn:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    padding-right: 20px;
+    transition: 0.9s;
+
+}
+
+
+.social-icons :hover {
+    transform: scale(1.3);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: cornflowerblue;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+
+
+    justify-content: center;
+    /* columnلو عايز العناصر يكونو تحت بعض  */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    /* بيزبط التنسيقات بتاعه العناصر عشان لو ضفت عناصر كتير هو لوحده ينسق العناصر دى */
+}
+
+.card {
+    background-color: white;
+    /* لما حطينا width اتنسقوا كويس */
+    width: 300px;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    /* اول قيمه لفوق و لتحت , التانيه عشان اليمين و الشسمال , الثالثه عشان الوضوح او الشفافيه , الرابع اللون */
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: cornflowerblue;
+    font-size: 22px;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: cornflowerblue;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.info p {
+    color: black;
+    font-weight: 600;
+
+}
+
+/* here is to select the content in the project class */
+.projects .content {
+    background-color: rgb(3, 3, 33);
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+/* .project-card:hover .project-image {
+    opacity: 0.9;
+} */
+
+.project-card img {
+    width: 100%;
+
+
+}
+
+.project-info {
+    padding: 1em;
+
+}
+
+.project-category {
+    font-size: 1.3em;
+    color: black;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.more-details {
+    text-decoration: none;
+    color: cornflowerblue;
+
+}
+
+.more-details:hover {
+    color: red;
+}
+
+.AAA {
+    display: flex;
+    justify-content: center;
+    color: cornflowerblue;
+    margin: -7px;
+    font-size:21px;
+    font-weight: 700;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-design {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    transition: 0.2s ease;
+    min-height: 128px;
+
+
+
+}
+
+.card-design:hover {
+    transform: scale(1.1);
+}
+
+.new-icon {
+    color: cornflowerblue;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.new-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.new-info h6 {
+    color: black;
+    font-weight: 400;
+}
+
+.last {
+    background-color:darkblue;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.footer-last {
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+
+.footer-last span {
+    color: rgb(255, 255, 255);
+}
+
+.last .social-icons {
+    font-size: 1.3;
+}
+
+/* كدا الموقع خلص  */
+/* هنبدا نعمل media queries */
+/* @media (max-width:844px){
+    .main {
+            background-size: auto;
+            
+            
+    } 
+    
+    
+    
+}*/
+    
+
+/* 
+ @media(max-width:1023px) {
+    header {
+        padding: 12px 20px;
+
+
+    }section{
+        background-position: bottom;
+        background-size: cover;
+    }
+    main{
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+
+    }
+
+    section {
+        padding: 80px 20px;
+
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+
+
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+
+    }
+
+    .content {
+        align-items: center;
+        flex-direction: column;
+
+    }.social-icons{
+        padding-bottom: 200px;
+        display: flex;
+        flex: wrap;
+        padding-left: 10px;
+    }.main{
+        background-position: bottom;
+        background-size: cover;
+    }
+
+} 
+
+ @media(max-width:641px) {
+    body {
+        font-size: 12px; 
+         background-size: cover; 
+        
+
+     }.main{
+        background-position: bottom;
+        background-size: cover;
+
+    }
+    }
+
+    .main-content h2 {
+        font-size: 1.4em;
+
+    }
+
+
+@media(max-width:300px) {
+    body {
+        font-size: 10px;
+
+    }
+
+    .last {
+        height: 96px;
+    }
+}
+
+@media(max-width: 320px) {
+    body {
+        font-size: 7px;
+
+    }
+
+    header {
+        padding: 5px 10px;
+        width: 96%;
+
+    }
+
+    .card {
+        width: 220px;
+    }} */
+    /* @media(max-width: 1400px){
+        .main{
+            background-size: cover;
+            background-position: bottom;
+        }}
+        @media only screen 
+        and (device-width: 390px) 
+        and (device-height: 844px) 
+        and (-webkit-device-pixel-ratio: 3) {
+            section{
+                background-position: bottom;
+                background-size: cover;
+            }
+   }  */
+        
+   
+    @media (max-width:844px){
+    header {
+        padding: 2px 9px;
+        width: fit-content;
+
+
+    }header a.logo{
+        font-size: 29px;
+    }
+    
+    .main{
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: beige;
+    }
+    .main h2{
+        font-size: 17px;
+
+    }
+    .main h3{
+        font-size: 19px;
+    }
+    
+
+    .navigation a {
+        padding-left: 20px;
+
+    }
+
+    .title {
+        font-size: 1.8em;
+
+    }
+
+    section {
+        padding: 51px 20px;
+
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+
+
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+
+    }
+
+    .content {
+        align-items: center;
+        flex-direction: column;
+
+    }.social-icons{
+        padding-bottom: 200px;
+        display: flex;
+        flex: wrap;
+        padding-left: 10px;
+    }.navigation{
+        display: flex;
+        align-content: space-between;
+        font-size: 0.8em;
+        padding-left: 10px;
+        width: fit-content;
+    } .projects .content{
+        align-items: center;
+        flex-direction: row;
+    }.last{
+        display: flex;
+        /* align-items: center; */
+        align-content: space-between;
+        padding: 7px;
+    }.last .footer-last{
+        font-size: 19px;
+    }.last span{
+        font-size: 16px;
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+    
+} 
+    
